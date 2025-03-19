@@ -1,7 +1,7 @@
 // exampleCommand.ts
-import { Application } from './applications';
+import { IApplicationCommandData } from '@tryforge/forgescript';
 
-const command: Application = {
+const ApplicationCommand: IApplicationCommandData = {
   data: {
     type: 1,
     name: 'example',
@@ -18,4 +18,4 @@ const command: Application = {
   code: `$sendMessage[$channelID;Hello, **$option[example]**!]`,
 };
 
-export default command;
+export default ApplicationCommand;
