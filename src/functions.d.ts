@@ -5,5 +5,5 @@ export interface CustomFunction {
     code: string;
   }
   
-  // Declare a type for an array of custom functions
-  export type CustomFunctions = CustomFunction[];
+// Declare a type for an array of custom functions
+export type CustomFunctions = CustomFunction[];
