@@ -39,7 +39,10 @@ Welcome to the **Discord Bot Template** powered by **BotForge** and **TypeScript
    ```
 
 3. **Configure the bot:**
-   - Add your **Discord bot token** inside `.env`.
+   - Add your **Discord bot token** inside a `.env` file:
+   ```
+   DISCORD_TOKEN=Your_Token_Here
+   ```
 
 4. **Compile TypeScript:**
    ```sh
