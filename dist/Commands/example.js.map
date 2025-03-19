@@ -1,1 +1,0 @@
-{"version":3,"file":"example.js","sourceRoot":"","sources":["../../src/Commands/example.ts"],"names":[],"mappings":";;AAEA,MAAM,OAAO,GAAa;IACxB;QACE,IAAI,EAAE,eAAe;QACrB,IAAI,EAAE,SAAS;QACf,OAAO,EAAE,EAAE;QACX,IAAI,EAAE,uCAAuC;QAC7C,UAAU,EAAE,KAAK;KAClB;CACF,CAAC;AAEF,kBAAe,OAAO,CAAC"}

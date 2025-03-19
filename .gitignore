@@ -1,18 +1,33 @@
-# Node.js modules
+# Node.js dependencies
 /node_modules/
+package-lock.json
+yarn.lock
 
 # Build output
-#/dist/
+/dist/
 
 # TypeScript cache
 *.tsbuildinfo
 
-# .env file for environment variables
-#.env
+# Logs & debugging
+npm-debug.log*
+yarn-debug.log*
+*.log
 
-# Dev folders
-#/Archives
-#/Storage
+# Environment variables
+.env
 
-# DataBase
+# Development-related folders
+/Archives/
+/Storage/
+
+# Database files
 forge.db
+*.db
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# VSCode settings (optional)
+.vscode/
