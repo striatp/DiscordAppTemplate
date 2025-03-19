@@ -3,7 +3,7 @@ import { ForgeClient } from '@tryforge/forgescript';
 import { ForgeDB } from '@tryforge/forge.db';
 import { ForgeCanvas } from '@tryforge/forge.canvas';
 import * as dotenv from 'dotenv';
-import functions from './functions';
+import { join } from 'path';
 
 // Environment variables
 dotenv.config();
@@ -40,12 +40,11 @@ const client: ForgeClient = new ForgeClient({
     ]
 });
 
-// Load custom functions (if you have any)
-functions.forEach((func) => client.functions.add(func));
-
 // Commands loader
-client.commands.load('./dist/Commands');
-client.applicationCommands.load('./dist/App');
+/* NOTE: Swapped to __dirname ~ Lynnux */
+client.functions.load(join(__dirname, 'Functions'))
+client.commands.load(join(__dirname, 'Commands'));
+client.applicationCommands.load(join(__dirname, 'app'));
 
 // Client login
 const token: string = process.env.DISCORD_TOKEN || '';

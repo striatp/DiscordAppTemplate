@@ -8,5 +8,10 @@
     "@tryforge/forgescript": "^2.2.0",
     "dotenv": "^16.4.7",
     "sqlite3": "^5.1.7"
+  },
+  "pnpm": {
+    "ignoredBuiltDependencies": [
+      "sqlite3"
+    ]
   }
 }
