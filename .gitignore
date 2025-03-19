@@ -1,0 +1,18 @@
+# Node.js modules
+/node_modules/
+
+# Build output
+#/dist/                                         # Remove the first # if you want to ignore the distributed files
+
+# TypeScript cache
+*.tsbuildinfo
+
+# .env file for environment variables
+.env
+
+# Dev folders
+/Archives
+/Storage
+
+# DataBase
+forge.db
