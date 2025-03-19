@@ -1,5 +1,12 @@
 {
   "devDependencies": {
     "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "@tryforge/forge.canvas": "^1.2.1",
+    "@tryforge/forge.db": "^2.0.9",
+    "@tryforge/forgescript": "^2.2.0",
+    "dotenv": "^16.4.7",
+    "sqlite3": "^5.1.7"
   }
 }
