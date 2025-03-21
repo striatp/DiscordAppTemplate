@@ -41,8 +41,7 @@ const client: ForgeClient = new ForgeClient({
 });
 
 // Commands loader
-/* NOTE: Swapped to __dirname ~ Lynnux */
-client.functions.load(join(__dirname, 'Functions'))
+client.functions.load(join(__dirname, 'Functions'));
 client.commands.load(join(__dirname, 'Commands'));
 client.applicationCommands.load(join(__dirname, 'app'));
 
