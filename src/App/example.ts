@@ -1,4 +1,3 @@
-// exampleCommand.ts
 import { IApplicationCommandData } from '@tryforge/forgescript';
 
 const ApplicationCommand: IApplicationCommandData = {
@@ -11,11 +10,11 @@ const ApplicationCommand: IApplicationCommandData = {
         type: 6,
         name: 'user',
         description: 'Example using options.',
-        required: false
+        required: true
       }
     ]
   },
-  code: `$sendMessage[$channelID;Hello, **$option[example]**!]`,
+  code: `$channelID;Hello, **$username[$option[user]]**!`,
 };
 
 export default ApplicationCommand;

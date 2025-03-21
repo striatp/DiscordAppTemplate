@@ -10,7 +10,7 @@ dotenv.config();
 
 // Define the client configuration
 const client: ForgeClient = new ForgeClient({
-    // intents
+    // Intents
     intents: [
         'Guilds',
         'GuildMessages',
@@ -40,7 +40,7 @@ const client: ForgeClient = new ForgeClient({
     ]
 });
 
-// Commands loader
+// Commands & functions loader
 client.functions.load(join(__dirname, 'Functions'));
 client.commands.load(join(__dirname, 'Commands'));
 client.applicationCommands.load(join(__dirname, 'app'));
